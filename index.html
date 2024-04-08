@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Tic-tac-toe</title>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="winning-message hide">
+      <span>X win</span>
+    </div>
+    <div class="head">
+      <select>
+        <option selected="true" disabled="disabled">Игровой режим</option>
+        <option value="multiplayer">Мультиплеер</option>
+        <option value="eazy">Легий(ИИ)</option>
+        <option value="medium">Средний(ИИ)</option>
+        <option value="impossible">Невозможный(ИИ)</option>
+      </select>
+
+      <h1 id="Score">
+        Счёт:<span id="player1">0</span>-<span id="player2">0</span>
+      </h1>
+    </div>
+    <div class="main-component">
+      <div class="el" id="0"></div>
+      <div class="el" id="1"></div>
+      <div class="el right-border" id="2"></div>
+      <div class="el" id="3"></div>
+      <div class="el" id="4"></div>
+      <div class="el right-border" id="5"></div>
+      <div class="el bottom-border" id="6"></div>
+      <div class="el bottom-border" id="7"></div>
+      <div class="el bottom-border right-border" id="8"></div>
+    </div>
+
+    <div class="container-score"></div>
+    <div class="container-button">
+      <button id="restartBtn">Рестарт</button>
+    </div>
+  </body>
+</html>
